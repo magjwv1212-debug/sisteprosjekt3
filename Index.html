@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <style>
         * {
@@ -19,31 +21,491 @@
 
         #section {
             height: 100vh;
-            background-image: url(mulamiszczu-old-trafford-1959155.jpg);
+            background-image: url(bilder/oldtrafford.jpg);
             background-size: cover;
+
+            display: flex;
+            align-items: flex-end;
+
+
         }
 
         header {
             height: 75px;
             width: 100%;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            z-index: 5;
+            border-bottom: 1px red solid;
+            color: rgba(255, 255, 255, 0.641);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
         }
-        #er{
-            
+
+        #er {
+            color: white;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+
+        }
+
+        nav {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        nav p:hover {
+            opacity: 0.8;
+            border-bottom: 1px solid red;
+        }
+
+        #to>p {
+            color: rgb(255, 255, 0);
+            height: 10%;
+            font-size: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        #to {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+            margin-left: 70px;
+
+
+
+
+
+        }
+
+        #section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        h1 {
+            color: white;
+            font-size: 120px;
+            height: 60%;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: 'Bebas Neue', sans-serif;
+            justify-content: center;
+            line-height: 0.9;
+
+        }
+
+        .manc {
+            height: 30%;
+
+            color: rgba(255, 255, 255, 0.49);
+            font-size: 16px;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            line-height: 1.4;
+            font-family: 'Outfit', sans-serif;
+            word-spacing: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #rød {
+            color: red;
+            margin-right: 5px;
+        }
+
+        #his {
+            width: 30%;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+        }
+
+        #spil {
+            border: 1px rgba(255, 255, 255, 0.552) solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 120px;
+            font-size: 20px;
+        }
+
+        #tor {
+            border: 1px red solid;
+            background-color: rgb(179, 14, 14);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 120px;
+            font-size: 20px;
+        }
+
+        #spil:hover {
+            border: 1px rgb(255, 0, 0) solid;
+            color: red;
+            transform: translateY(-2px);
+        }
+
+        #tor:hover {
+            background-color: red;
+            transform: translateY(-2px);
+        }
+
+        #tre {
+            height: 300vh;
+            background-color: #0D0D0D;
+            background-image:
+                repeating-linear-gradient(70deg,
+                    rgba(193, 0, 0, 0.3) 0px,
+                    rgba(193, 0, 0, 0.3) 1px,
+                    transparent 1px,
+                    transparent 40px),
+                repeating-linear-gradient(20deg,
+                    rgba(193, 0, 0, 0.3) 0px,
+                    rgba(193, 0, 0, 0.3) 1px,
+                    transparent 1px,
+                    transparent 40px);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        #boks {
+            height: 600px;
+            width: 400px;
+            background-color: #8B0000;
+            background-image:
+                repeating-linear-gradient(70deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px),
+                repeating-linear-gradient(20deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px);
+
+
+            background-attachment: fixed;
+            clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
+            border: 1px solid white;
+        }
+
+        #or {
+            height: 600px;
+            width: 400px;
+
+            background-color: #8B0000;
+            background-image:
+                repeating-linear-gradient(70deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px),
+                repeating-linear-gradient(20deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px);
+            background-attachment: fixed;
+            clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
+            border: 1px solid rgb(125, 124, 124);
+
+
+        }
+
+        #gr {
+            height: 600px;
+            width: 400px;
+
+            background-color: #8B0000;
+            background-image:
+                repeating-linear-gradient(70deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px),
+                repeating-linear-gradient(20deg,
+                    rgba(203, 142, 12, 0.7) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px);
+            background-attachment: fixed;
+            clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
+            border: 1px solid rgb(255, 119, 35);
+
+        }
+
+        #mid {
+            height: 600px;
+            width: 400px;
+
+            background-color: #02024a;
+            background-image:
+                repeating-linear-gradient(70deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px),
+                repeating-linear-gradient(20deg,
+                    rgba(255, 255, 255, 0.1) 0px,
+                    rgba(255, 255, 255, 0.1) 1px,
+                    transparent 1px,
+                    transparent 40px);
+            background-attachment: fixed;
+            clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
+            border: 1px solid rgb(255, 255, 255);
+
+        }
+
+        #bid {
+            height: 600px;
+            width: 400px;
+
+            background-color: #000000;
+            background-image:
+                repeating-linear-gradient(70deg,
+                    rgba(255, 255, 255, 0.7) 0px,
+                    rgba(255, 255, 255, 0.7) 1px,
+                    transparent 1px,
+                    transparent 40px),
+                repeating-linear-gradient(20deg,
+                    rgba(255, 255, 255, 0.7) 0px,
+                    rgba(255, 255, 255, 0.7) 1px,
+                    transparent 1px,
+                    transparent 40px);
+            background-attachment: fixed;
+            clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        #fire {
+            height: 100vh;
+            background-color: rgb(97, 0, 0);
+        }
+
+        #fire.new {
+            background-color: #6B0000;
+            background-image: repeating-linear-gradient(-45deg,
+                    rgba(255, 200, 0, 0.2) 0px,
+                    rgba(255, 200, 0, 0.2) 10px,
+                    rgba(255, 200, 0, 0.08) 10px,
+                    rgba(255, 200, 0, 0.08) 20px,
+                    rgba(255, 200, 0, 0.03) 20px,
+                    rgba(255, 200, 0, 0.03) 30px)
+        }
+
+        #fire.old {
+            background-color: #8B0000;
+            background-image: repeating-linear-gradient(90deg,
+                    rgba(180, 0, 0, 1) 0px,
+                    rgba(180, 0, 0, 1) 18px,
+                    rgba(140, 0, 0, 1) 18px,
+                    rgba(140, 0, 0, 1) 36px);
+        }
+
+        #fire.fold {
+            background-color: #C10000;
+            background-image:
+                repeating-linear-gradient(90deg,
+                    rgba(0, 0, 0, 0.8) 0px,
+                    rgba(0, 0, 0, 0.08) 1px,
+                    transparent 1px,
+                    transparent 30px),
+                repeating-linear-gradient(0deg,
+                    rgba(0, 0, 0, 008) 0px,
+                    rgba(0, 0, 0, 0.08) 1px,
+                    transparent 1px,
+                    transparent 30px);
+        }
+
+        #fire.gold {
+
+            background-color: #1e4400;
+            background-image: repeating-linear-gradient(-45deg,
+                    rgba(240, 200, 0, 0.8) 0px,
+                    rgba(240, 200, 0, 0.8) 10px,
+                    rgba(240, 200, 0, 0.4) 10px,
+                    rgba(240, 200, 0, 0.4) 20px,
+                    rgba(240, 200, 0, 0.15) 20px,
+                    rgba(240, 200, 0, 0.15) 30px);
+        }
+
+        #fire.told {
+            background-color: #B00000;
+            background-image:
+                repeating-linear-gradient(90deg,
+                    rgba(255, 255, 255, 0.06) 0px,
+                    rgba(255, 255, 255, 0.06) 2px,
+                    transparent 2px,
+                    transparent 20px),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, transparent 12%);
+
+
+        }
+
+
+
+
+        .box {
+            height: 50px;
+            width: 100px;
+            background-color: rgba(86, 86, 86, 0.558);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Outfit', sans-serif;
+            font-size: 30px;
+            border: 1px solid white;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .flex {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        #fem {
+            background-color: antiquewhite;
+            height: 200px;
         }
     </style>
 </head>
 
 <body>
-    <div id="section">
-        <header>
-            <div id="er"> Manchester United</div>
-            <nav>
+    <header>
 
-            </nav>
-        </header>
+        <div id="er"> <a href="Index.html"><span id="rød"> MAN </span>UTD </div></a>
+
+        <nav>
+            <p>SPILLERE</p>
+            <p>HISTORIKK</p>
+        </nav>
+    </header>
+    <div id="section">
+        <div id="to">
+
+
+            <p> Manchester United FC — Siden 1878 </p>
+
+
+            <h1>The <span style="color: red;"> Red </span> Devils</h1>
+            <div class="manc">
+
+                <p>En av verdens mest kjente og elskede fotballklubber. Fra Newton Heath til Old Trafford — en historie
+                    fylt med triumfer, legender og lidenskap. </p>
+            </div>
+            <div id="his">
+                <div id="spil"> Spillere</div>
+                <div id="tor">Historie</div>
+
+            </div>
+        </div>
+
 
     </div>
+    <section id="tre">
+        <div id="boks"></div>
+        <div id="gr"></div>
+        <div id="or"></div>
+        <div id="mid"></div>
+        <div id="bid"></div>
+        <div id="mid"></div>
+        <div id="boks"></div>
+        <div id="gr"></div>
+        <div id="or"></div>
+
+    </section>
+    <section id="fem">
+
+    </section>
+    <section id="fire">
+        <div class="flex">
+
+            <div class="box fr">2013</div>
+            <div class="box ni">2008</div>
+            <div class="box te">1999</div>
+            <div class="box pr">1993</div>
+            <div class="box lr">1968</div>
+        </div>
+
+    </section>
+    <script>
+        const totus = document.querySelector('.ni')
+        const potus = document.querySelector('.te')
+        const rotus = document.querySelector('.fr')
+        const lotus = document.querySelector('.pr')
+        const wotus = document.querySelector('.lr')
+        const fire = document.getElementById('fire')
+        totus.addEventListener('click', function () {
+            console.log('hei')
+            fire.classList.add('new')
+            fire.classList.remove('old')
+            fire.classList.remove('fold')
+            fire.classList.remove('gold')
+            fire.classList.remove('told')
+
+        })
+        potus.addEventListener('click', function () {
+            console.log('hei')
+            fire.classList.add('old')
+            fire.classList.remove('fold')
+            fire.classList.remove('gold')
+            fire.classList.remove('told')
+
+        })
+        rotus.addEventListener('click', function () {
+            console.log('hei')
+            fire.classList.add('fold')
+            fire.classList.remove('gold')
+            fire.classList.remove('told')
+
+        })
+        lotus.addEventListener('click', function () {
+            console.log('hei')
+            fire.classList.add('gold')
+            fire.classList.remove('told')
+
+
+        })
+        wotus.addEventListener('click', function () {
+            console.log('hei')
+            fire.classList.add('told')
+
+
+        })
+    </script>
 
 </body>
 
