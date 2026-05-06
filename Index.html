@@ -400,6 +400,16 @@
             background-color: antiquewhite;
             height: 200px;
         }
+
+        #gr img {
+            height: 80%;
+
+        }
+
+        #mid img {
+            height: 90%;
+            width: 140%;
+        }
     </style>
 </head>
 
@@ -409,7 +419,7 @@
         <div id="er"> <a href="Index.html"><span id="rød"> MAN </span>UTD </div></a>
 
         <nav>
-            <p>SPILLERE</p>
+            <p><a href="spillere.html">SPILLERE</a></p>
             <p>HISTORIKK</p>
         </nav>
     </header>
@@ -427,7 +437,11 @@
                     fylt med triumfer, legender og lidenskap. </p>
             </div>
             <div id="his">
-                <div id="spil"> Spillere</div>
+                <div id="spil">
+                    <a href="spillere.html">
+                        Spillere
+                    </a>
+                </div>
                 <div id="tor">Historie</div>
 
             </div>
@@ -439,11 +453,13 @@
         <div id="boks"></div>
         <div id="gr"></div>
         <div id="or"></div>
-        <div id="mid"></div>
-        <div id="bid"></div>
+        <div id="mid"><img src="bilder/b5c543079f5c4b82b4a4a1b5f457be61bd3398bd.jpg-removebg-preview.png" alt=""></div>
+        <div id="bid"><img
+                src="bilder/18-184717_christiano-ronaldo-man-utd-colours-cristiano-ronaldo-manchester.png-removebg-preview.png"
+                alt=""></div>
         <div id="mid"></div>
         <div id="boks"></div>
-        <div id="gr"></div>
+        <div id="gr"><img src="bilder/Untitled-1-4-removebg-preview.png" alt=""></div>
         <div id="or"></div>
 
     </section>
@@ -468,6 +484,7 @@
         const lotus = document.querySelector('.pr')
         const wotus = document.querySelector('.lr')
         const fire = document.getElementById('fire')
+        const ron = document.getElementById('bid')
         totus.addEventListener('click', function () {
             console.log('hei')
             fire.classList.add('new')
@@ -504,6 +521,10 @@
             fire.classList.add('told')
 
 
+        })
+
+        ron.addEventListener('click', function () {
+            ron.classList.add('red')
         })
     </script>
 
